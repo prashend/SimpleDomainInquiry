@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Domain Inquiry</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to <span id="domainText"></span></h1>
+    <h2>Domain Inquiry</h2>
+    <p>If you have any inquiry regarding this domain, please use the form below.</p>
+
+    <form action="#" method="POST" id="inquiryForm">
+      <input type="hidden" name="_subject" value="New Domain Inquiry" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="domain" id="domainField" />
+      <input type="hidden" name="referrer" id="referrerField" />
+      <input type="hidden" name="_next" id="nextField" />
+      <input type="text" name="_honey" style="display:none" />
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; <span id="year"></span> SimpleDomainInquiry — View the source on <a
+      href="https://github.com/username/SimpleDomainInquiry" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+  </footer>
+  <script src="js/secret.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
